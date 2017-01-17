@@ -10,6 +10,7 @@ dsep.test<-function (amat, S, n, only.null = F)
     p <- rep(0, k)
     if (!only.null) 
         cat("Individual d-sep claims in basis set", "\n")
+    # test
     for (i in 1:k) {
         r <- pcor(l[[i]], S)
         q <- length(l[[i]]) - 2
