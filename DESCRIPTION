@@ -1,8 +1,7 @@
 Package: CauseAndCorrelation
 Type: Package
 Title: Functions for Path Analysis and SEM
-Description: A package of functions to accompany the book: 
-Cause and Correlation in Biology, 2nd edition
+Description: A package of functions to accompany the book: Cause and Correlation in Biology, 2nd edition
 Date: 2017-01-13
 Version: 0.1
 Author: Bill Shipley <Bill.Shipley@usherbrooke.ca>
