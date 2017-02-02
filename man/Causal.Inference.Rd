@@ -2,28 +2,31 @@
 \alias{Causal.Inference}
 
 \title{
-No title yet
+Causal Inference function
 }
 \description{
-No description yet
+This function impliments the CI (Causal Inference) Algorithm of Pearl (2009).  It takes the multivariate observations (3 or more variables) as input, and determines the partly directed dependency graph that corresponds to the patterns of correlation and partial correlation in the imput data. It then generates a directed graph that is d-separation equivalent to the partly directed dependency graph and tests it against the data using a d-sep test.
 }
 \usage{
 Causal.Inference(dat, alpha.reject = 0.05, write.result = T)
 }
 
 \arguments{
-  \item{dat}{...}
-  \item{alpha.reject}{...}
-  \item{write.result}{...}
+  \item{dat}{a matrix or data frame containing only numeric variables}
+  \item{alpha.reject}{the significance level used to test the proposed models}
+  \item{write.result}{a logical argument; if FALSE only the binary output matrix is written.  If TRUE, the partially oriented dependency graph is output}
 }
 \details{
-
+As currently written, the funciton assumes multivariate normality of the input data (so all variables must be numeric) and the statistical inferences are obtained via Pearson (partial) correlation coefficients.  Alternatively, if your input data are in the form of ranks (for example, via the ranks() function), then Spearman rank (partial) correlations are used.
 }
 \value{
-
+Either a binary matrix (if write.result=F), or the partially oriented dependency graph (if write.result=T).  A "0", "1", or "2" in the binary matrix means "no edge", "undirected edge", or "edge into the column variable", respectively.
+A -- B means an indirected edge between variables A and B
+A --> B means an edge from A into B.
 }
 \references{
-
+Pearl, J. 2009.  Causality. Models, Reasoning , and Inference (2nd edition). Cambridge University Press.
+Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analysis, structural equations and causal inference in R. Cambridge University Press.
 }
 \author{
   Bill Shipley
@@ -35,10 +38,15 @@ Causal.Inference(dat, alpha.reject = 0.05, write.result = T)
 
 
 \seealso{
-
+\code{\link{dsep.test}}, Pcor.prob, shipley.test2
 }
 \examples{
-
+> Causal.Inference(dat=Fig3.1.data,alpha.reject=0.05,write=T)
+A -- B 
+B -- C 
+B -- D 
+C -- E 
+D -- E 
 }
 
 \keyword{ ~kwd1 }
