@@ -1,7 +1,7 @@
 \name{EPA}
 \alias{EPA}
 \title{
-...
+EPA
 }
 \description{
 

@@ -5,7 +5,7 @@
 Causal Inference function
 }
 \description{
-This function impliments the CI (Causal Inference) Algorithm of Pearl (2009).  It takes the multivariate observations (3 or more variables) as input, and determines the partly directed dependency graph that corresponds to the patterns of correlation and partial correlation in the imput data. It then generates a directed graph that is d-separation equivalent to the partly directed dependency graph and tests it against the data using a d-sep test.
+This function impliments the CI (Causal Inference) Algorithm of Pearl (2009).  It takes the multivariate observations (3 or more variables) as input and determines the partly directed dependency graph that corresponds to the patterns of correlation and partial correlation in the input data.
 }
 \usage{
 Causal.Inference(dat, alpha.reject = 0.05, write.result = T)
@@ -13,11 +13,11 @@ Causal.Inference(dat, alpha.reject = 0.05, write.result = T)
 
 \arguments{
   \item{dat}{a matrix or data frame containing only numeric variables}
-  \item{alpha.reject}{the significance level used to test the proposed models}
+  \item{alpha.reject}{the significance level used in deciding if a d-separation claim exists or not}
   \item{write.result}{a logical argument; if FALSE only the binary output matrix is written.  If TRUE, the partially oriented dependency graph is output}
 }
 \details{
-As currently written, the funciton assumes multivariate normality of the input data (so all variables must be numeric) and the statistical inferences are obtained via Pearson (partial) correlation coefficients.  Alternatively, if your input data are in the form of ranks (for example, via the ranks() function), then Spearman rank (partial) correlations are used.
+As currently written, the funtiton assumes multivariate normality of the input data (so all variables must be numeric) and the statistical inferences are obtained via Pearson (partial) correlation coefficients.  Alternatively, if your input data are in the form of ranks (for example, via the ranks() function), then Spearman rank (partial) correlations are used.  This function only obtains the output for the given alpha.reject value and is called by the Exploratory.path.analysis function, which is the function that you should normally use.
 }
 \value{
 Either a binary matrix (if write.result=F), or the partially oriented dependency graph (if write.result=T).  A "0", "1", or "2" in the binary matrix means "no edge", "undirected edge", or "edge into the column variable", respectively.
