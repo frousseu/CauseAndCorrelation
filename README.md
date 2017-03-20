@@ -7,13 +7,13 @@ Provided the latest versions of [Rtools](https://cran.r-project.org/bin/windows/
 
 ```r
 library(devtools)
-install_github("frousseu/PathAnalysisCourse")
+install_github("BillShipley/PathAnalysisCourse")
 library(PathAnalysisCourse)
 ```
 
 Here is a more detailed list of [prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for building source packages for Windows, Mac and Linux. Make sure you have the latest version of R installed on your computer.
 
-In case something goes wrong with the package installation, here is the code for every function in the package. The code can be copied and pasted in the R console to get the definition of all functions. In this case, help files won't be available.
+In case something goes wrong with the package installation, here is the code for every function in the package. The code can be copied and pasted in the R console to get the definition of all functions. However, in this case, help files won't be available.
 
 
 ```r
