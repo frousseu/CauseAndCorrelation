@@ -6,7 +6,15 @@ Package of functions for the path analysis [summer school course](http://www.bil
 Provided the latest versions of [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and [MiKTeX](https://miktex.org/) are installed to be able to build source packages, type:
 
 ```r
+# install package dependencies first
+install.packages("lavaan")
+install.packages("ggm")
+
+# install and load devtools to be able to install packages from GitHub
+install.packages("devtools")
 library(devtools)
+
+# install CauseAndCorrelation from Bill's GitHub
 install_github("BillShipley/CauseAndCorrelation")
 library(CauseAndCorrelation)
 ```
