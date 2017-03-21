@@ -7,8 +7,8 @@ Provided the latest versions of [Rtools](https://cran.r-project.org/bin/windows/
 
 ```r
 library(devtools)
-install_github("BillShipley/PathAnalysisCourse")
-library(PathAnalysisCourse)
+install_github("BillShipley/CauseAndCorrelation")
+library(CauseAndCorrelation)
 ```
 
 Here is a more detailed list of [prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for building source packages for Windows, Mac and Linux. Make sure you have the latest version of R installed on your computer.
