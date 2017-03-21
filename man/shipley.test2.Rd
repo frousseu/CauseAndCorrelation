@@ -17,7 +17,7 @@ shipley.test2(amat, S, n)
   \item{n}{the number of independent multivariate observations involved in the covariance matrix}
 }
 \details{
-The test statistic is C = -2 ∑ \ln p_j where p_j are the p-values of tests of conditional independence in the basis set computed by basiSet(A) in the ggm library. The p-values are independent uniform variables on (0,1) and the statistic has exactly a chi square distribution on 2k degrees of freedom where k is the number of elements of the basis set. Shipley (2002) calls this test Fisher's C test.
+The test statistic is C = -2 ∑ ln p_j where p_j are the p-values of tests of conditional independence in the basis set computed by basiSet(A) in the ggm library. The p-values are independent uniform variables on (0,1) and the statistic has exactly a chi square distribution on 2k degrees of freedom where k is the number of elements of the basis set. Shipley (2002) calls this test Fisher's C test.
 This is simply the shipley.test function in the ggm library, updated to also output the union basis set of the DAG and the associated null probabilities.  The statistical tests are based on Pearson (partial) correlations, and so assume multivariate normality and linearity of responses.  By converting the observations to ranks and inputting the covariance matrix of these ranks, you convert the inferential tests to ones based on Spearman (partial) correlations.
 }
 \value{
