@@ -26,7 +26,7 @@ If everything worked, the last command should have opened the help file for the 
 ## If things do not work
 
 
-###Step 1
+### Step 1
 
 Read the error messages and make sure all packages dependencies are installed and loaded, especially package `lavaan` and `ggm`. If a message says that a package could not be loaded, try installing it manually by typing:
 
@@ -37,12 +37,12 @@ install.packages("packagename")
 Until all packages are installed. A current bug in `install_github` on Windows prevents the installation of package dependencies of denpendencies (`lavaan` and `ggm`).
 
 
-###Step 2
+### Step 2
 
 Although this should not be required, for certain packages with compiled code, [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and [MiKTeX](https://miktex.org/) need to be installed on Windows to be able to build source packages.For Mac users, Xcode is required and can be installed through the apple store. Here is a more detailed list of [prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for building source packages for Windows, Mac and Linux. Make sure you have the latest version of R installed on your computer.
 
 
-###Step 3
+### Step 3
 
 In case something goes wrong with the package installation and the previous instructions do not work, here is the code for every function in the package. The code can be copied and pasted in the R console to get the definition of all functions. However, in this case, help files won't be available.
 
