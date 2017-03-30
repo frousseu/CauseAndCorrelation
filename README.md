@@ -1,9 +1,9 @@
 # CauseAndCorrelation
-Package of functions for the path analysis [summer school course](http://www.billshipley.recherche.usherbrooke.ca/summer%20school%20path%20analysis.htm) by [B. Shipley](http://www.billshipley.recherche.usherbrooke.ca/)
+Package of functions for the path analysis [summer school course](http://www.billshipley.recherche.usherbrooke.ca/summer%20school%20path%20analysis.htm) by [Bill Shipley](http://www.billshipley.recherche.usherbrooke.ca/)
 
 ## Installation
 
-First, make sure that you have the latest version of [R](https://cran.r-project.org/) on your computer, or at least a very recent version. To install the package from GitHub, type the following commands in your R or RStudio console:
+First, make sure that you have the [latest version of R](https://cran.r-project.org/) on your computer, or at least a very recent version. To install the package from GitHub, type the following commands in your [R](https://cran.r-project.org/)  or [RStudio](https://www.rstudio.com/products/RStudio/#Desktop) console:
 
 ```r
 # install package dependencies first
@@ -34,12 +34,12 @@ Read the error messages and make sure all packages dependencies are installed an
 # manually installing a dependencies
 install.packages("packagename")
 ```
-Until all packages are installed. A current bug in `install_github` on Windows prevents the installation of package dependencies of denpendencies (`lavaan` and `ggm`).
+until all packages are installed. A current bug in `install_github` on Windows prevents the installation of package dependencies of dependencies (`lavaan` and `ggm`).
 
 
 ### Step 2
 
-Although this should not be required, for certain packages with compiled code, [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and [MiKTeX](https://miktex.org/) need to be installed on Windows to be able to build source packages.For Mac users, Xcode is required and can be installed through the apple store. Here is a more detailed list of [prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for building source packages for Windows, Mac and Linux. Make sure you have the latest version of R installed on your computer.
+Although this should not be required, for certain packages with compiled code, [Rtools](https://cran.r-project.org/bin/windows/Rtools/) and [MiKTeX](https://miktex.org/) need to be installed on Windows to be able to build source packages. For Mac users, Xcode is required and can be installed through the apple store. Here is a more detailed list of [prerequisites](https://support.rstudio.com/hc/en-us/articles/200486498-Package-Development-Prerequisites) for building source packages for Windows, Mac and Linux.
 
 
 ### Step 3
