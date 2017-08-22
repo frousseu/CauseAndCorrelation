@@ -1,4 +1,4 @@
-exportPattern("^[[:alpha:]]+")
+exportPattern(Causal.Inference,dsep.test,Exploratory.path.analysis,MCX2,Observed.Equivalent.DAG,Pcor.prob,shipley.test2,vanishing.tetrads)
 import(graphics)
 import(stats)
 import(utils)
