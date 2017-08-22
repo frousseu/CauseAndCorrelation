@@ -1,5 +1,5 @@
-\name{orient.phasell.1}
-\alias{orient.phasell.1}
+\name{orient.phaseII.1}
+\alias{orient.phaseII.1}
 
 \title{
 ...
@@ -8,7 +8,7 @@
 
 }
 \usage{
-orient.phasell.1(cgraph, nvars) 
+orient.phaseII.1(cgraph, nvars) 
 }
 
 \arguments{

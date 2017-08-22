@@ -2,28 +2,35 @@
 \alias{shipley.test2}
 
 \title{
-...
+shipley.test2
 }
 \description{
-
+A more complete version of the ggm library function Shipley.test, which impliments the dsep test.
 }
 \usage{
 shipley.test2(amat, S, n)
 }
 
 \arguments{
-  \item{amat}{}
-  \item{S}{}
-  \item{n}{}
+  \item{amat}{a binary matrix holding the directed acyclic graph; usually produced via the DAG function in the ggm library}
+  \item{S}{the covariance matrix of the variables in the DAG}
+  \item{n}{the number of independent multivariate observations involved in the covariance matrix}
 }
 \details{
-
+The test statistic is C = -2 ∑ ln p_j where p_j are the p-values of tests of conditional independence in the basis set computed by basiSet(A) in the ggm library. The p-values are independent uniform variables on (0,1) and the statistic has exactly a chi square distribution on 2k degrees of freedom where k is the number of elements of the basis set. Shipley (2002) calls this test Fisher's C test.
+This is simply the shipley.test function in the ggm library, updated to also output the union basis set of the DAG and the associated null probabilities.  The statistical tests are based on Pearson (partial) correlations, and so assume multivariate normality and linearity of responses.  By converting the observations to ranks and inputting the covariance matrix of these ranks, you convert the inferential tests to ones based on Spearman (partial) correlations.
 }
 \value{
+Each d-separation claim: X_||_Y|[{Q}, the associated correlation coefficient, and the null probability
+
+ctest	Test statistic C.
+df	Degrees of freedom.
+pvalue	The P-value of the test, assuming a two-sided alternative.
+
 
 }
 \references{
-
+Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218.
 }
 \author{
   Bill Shipley
@@ -35,9 +42,25 @@ shipley.test2(amat, S, n)
 
 
 \seealso{
-
+\code{\link{shipley.test}}, \code{\link{Pcor.prob}}
 }
 \examples{
+Fig3.1.DAG<-DAG(B~A,C~B,D~B,E~C+D)
+shipley.test2(amat=test,S=cov(Fig3.1.data),n=100)
+testing individual d-sep claims in basis set 
+A _||_ D |{ B } r= 0.051  p= 0.618 
+A _||_ C |{ B } r= -0.118  p= 0.245 
+A _||_ E |{ D C } r= 0.066  p= 0.521 
+B _||_ E |{ A D C } r= 0.019  p= 0.855 
+D _||_ C |{ B } r= -0.015  p= 0.88 
+$ctest
+[1] 5.648765
+
+$df
+[1] 10
+
+$pvalue
+[1] 0.8438591
 
 }
 

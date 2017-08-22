@@ -1,4 +1,4 @@
-orient.phasell.1<-function (cgraph, nvars) 
+orient.phaseII.1<-function (cgraph, nvars) 
 {
     if (nvars < 3) 
         return(cgraph)
