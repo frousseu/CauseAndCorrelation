@@ -6,7 +6,7 @@ Date: 2017-01-13
 Version: 0.1
 Author: Bill Shipley <Bill.Shipley@usherbrooke.ca>
 Maintainer: Bill Shipley <Bill.Shipley@usherbrooke.ca>
-Depends: lavaan, ggm
+Imports: lavaan, ggm
 License: GPL (>= 2)
 
 
