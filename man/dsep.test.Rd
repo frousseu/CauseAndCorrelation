@@ -7,7 +7,7 @@ dsep.test
 This function impliments the dsep test described in Shipley(2000), given a DAG and a covariance matrix of the variables in the DAG.  It is identical to the shipley.test function in the ggm library, except that, as a default, it only outputs the null probability of the data given the DAG.  This function is meant to be called within other functions.  You should use the shipley.test2 function if you want to get complete output.
 }
 \usage{
-dsep.test(amat, S, n, only.null = F)
+dsep.test(amat, s, n, only.null = F)
 }
 \arguments{
   \item{amat}{a binary matrix holding the directed acyclic graph; usually produced via the DAG function in the ggm library}
