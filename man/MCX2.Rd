@@ -10,7 +10,6 @@ The maximum likelihood chi-square statistic that is commonly calculated in struc
 MCX2(model.df, n.obs, model.chi.square, n.sim = 10000) 
 }
 \arguments{
-  \item{x}{}
   \item{model.df}{the number of degrees of freedom of your model}
   \item{n.obs}{the number of independent observations in your data}
   \item{model.chi.square}{the calculated maximum-likelihood chi-square statistic}

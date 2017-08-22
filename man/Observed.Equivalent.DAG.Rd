@@ -24,27 +24,27 @@ The input DAG is a binary matrix that is usually created via the DAG function in
 \code{\link{DAG}}
 }
 \examples{
-test.dag<-DAG(x2~x1,x3~x2,x4~x2,x5~x3+x4)
-Observed.Equivalent.DAG(test.dag,"x2")
-the original DAG is: 
-x1 -> x2 
-x2 -> x3 
-x2 -> x4 
-x3 -> x5 
-x4 -> x5 
-latent variable(s):  x2 
-_____________________ 
-Equivalent partially oriented graph involving only the observed variables: 
-x1 -- x3 
-x1 -- x4 
-x3 -- x4 
-x3 -> x5 
-x4 -> x5 
-One *possible* equivalent DAG involving only the observed variables: 
-x1 -> x3 
-x1 -> x4 
-x3 -> x4 
-x3 -> x5 
-x4 -> x5 
+#test.dag<-DAG(x2~x1,x3~x2,x4~x2,x5~x3+x4)
+#Observed.Equivalent.DAG(test.dag,"x2")
+#the original DAG is: 
+#x1 -> x2 
+#x2 -> x3 
+#x2 -> x4 
+#x3 -> x5 
+#x4 -> x5 
+#latent variable(s):  x2 
+#_____________________ 
+#Equivalent partially oriented graph involving only the observed variables: 
+#x1 -- x3 
+#x1 -- x4 
+#x3 -- x4 
+#x3 -> x5 
+#x4 -> x5 
+#One *possible* equivalent DAG involving only the observed variables: 
+#x1 -> x3 
+#x1 -> x4 
+#x3 -> x4 
+#x3 -> x5 
+#x4 -> x5 
 
 }

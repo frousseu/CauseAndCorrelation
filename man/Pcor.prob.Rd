@@ -28,6 +28,6 @@ The null probability associated with the Pearson partial correlation
 \examples{
 # Partial correlation between variables in columns 1 and 3, conditional on
 # the variables in columns 2 and 5.
-Pcor.prob(dat=Fig3.1.data,x=1,y=3,Q=c(2,5))
+#Pcor.prob(dat=Fig3.1.data,x=1,y=3,Q=c(2,5))
 }
 

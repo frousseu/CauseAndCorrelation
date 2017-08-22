@@ -35,10 +35,10 @@ Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analy
 \code{\link{dsep.test}}, \code{\link{Pcor.prob}}, \code{\link{shipley.test2}}
 }
 \examples{
-> Causal.Inference(dat=Fig3.1.data,alpha.reject=0.05,write=T)
-A -- B 
-B -- C 
-B -- D 
-C -- E 
-D -- E 
+#Causal.Inference(dat=Fig3.1.data,alpha.reject=0.05,write=T)
+#A -- B 
+#B -- C 
+#B -- D 
+#C -- E 
+#D -- E 
 }

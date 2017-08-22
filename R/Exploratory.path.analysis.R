@@ -1,6 +1,5 @@
 Exploratory.path.analysis<-function (dat, upper.bound = 0.5, significance.level = 0.05) 
 {
-    library(ggm)
     EPA.write <- function(cgraph, dat) {
         nvars <- dim(cgraph)[1]
         if (!is.null(names(dat))) 

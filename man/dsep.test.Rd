@@ -1,3 +1,4 @@
+\encoding{UTF-8}
 \name{dsep.test}
 \alias{dsep.test}
 \title{
@@ -19,7 +20,7 @@ dsep.test(amat, S, n, only.null = F)
 the null probability
 }
 \references{
-Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218.
+Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218. \href{http://dx.doi.org/10.1207/S15328007SEM0702_4}{10.1207/S15328007SEM0702_4}
 }
 \author{
   Bill Shipley
