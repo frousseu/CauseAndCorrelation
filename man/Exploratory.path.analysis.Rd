@@ -28,21 +28,21 @@ Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analy
 \code{\link{Causal.Inference}}
 }
 \examples{
-Exploratory.path.analysis(Fig3.1.data)
-Partially oriented graph: 
-A -- B 
-B -- C 
-B -- D 
-C -- E 
-D -- E 
-Null probability for partially oriented graph  0.8439 
-obtained at boundary level  0.05 
-An equivalent DAG: 
-A -> B 
-B -> C 
-B -> D 
-C -> E 
-D -> E 
-________
+#Exploratory.path.analysis(Fig3.1.data)
+#Partially oriented graph: 
+#A -- B 
+#B -- C 
+#B -- D 
+#C -- E 
+#D -- E 
+#Null probability for partially oriented graph  0.8439 
+#obtained at boundary level  0.05 
+#An equivalent DAG: 
+#A -> B 
+#B -> C 
+#B -> D 
+#C -> E 
+#D -> E 
+#________
 }
 
