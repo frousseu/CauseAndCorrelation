@@ -7,6 +7,7 @@ Version: 0.1
 Author: Bill Shipley <Bill.Shipley@usherbrooke.ca>
 Maintainer: Bill Shipley <Bill.Shipley@usherbrooke.ca>
 Imports: lavaan, ggm, stats, utils, graphics
+Encoding: UTF-8
 License: GPL (>= 2)
 
 
