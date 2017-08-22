@@ -1,2 +1,5 @@
 exportPattern("^[[:alpha:]]+")
+importFrom(graphics)
+importFrom(stats)
+importFrom(utils)
 
