@@ -48,5 +48,3 @@ In case something goes wrong with the package installation and the previous inst
 
 
 ```r
-
-```
