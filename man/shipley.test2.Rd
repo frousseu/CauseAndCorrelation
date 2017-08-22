@@ -10,7 +10,6 @@ A more complete version of the ggm library function Shipley.test, which implimen
 \usage{
 shipley.test2(amat, S, n)
 }
-
 \arguments{
   \item{amat}{a binary matrix holding the directed acyclic graph; usually produced via the DAG function in the ggm library}
   \item{S}{the covariance matrix of the variables in the DAG}
@@ -26,8 +25,6 @@ Each d-separation claim: X_||_Y|[{Q}, the associated correlation coefficient, an
 ctest	Test statistic C.
 df	Degrees of freedom.
 pvalue	The P-value of the test, assuming a two-sided alternative.
-
-
 }
 \references{
 Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218.
@@ -35,34 +32,10 @@ Shipley, B. (2000). A new inferential test for path models based on directed acy
 \author{
   Bill Shipley
 }
-\note{
-
-}
-
-
-
 \seealso{
 \code{\link{shipley.test}}, \code{\link{Pcor.prob}}
 }
 \examples{
 Fig3.1.DAG<-DAG(B~A,C~B,D~B,E~C+D)
 shipley.test2(amat=test,S=cov(Fig3.1.data),n=100)
-testing individual d-sep claims in basis set 
-A _||_ D |{ B } r= 0.051  p= 0.618 
-A _||_ C |{ B } r= -0.118  p= 0.245 
-A _||_ E |{ D C } r= 0.066  p= 0.521 
-B _||_ E |{ A D C } r= 0.019  p= 0.855 
-D _||_ C |{ B } r= -0.015  p= 0.88 
-$ctest
-[1] 5.648765
-
-$df
-[1] 10
-
-$pvalue
-[1] 0.8438591
-
 }
-
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }

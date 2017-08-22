@@ -10,7 +10,6 @@ This function takes, as input, a Directed Acyclic Graph (DAG) as well as some va
 \usage{
 Observed.Equivalent.DAG(full.DAG, latents = NA)
 }
-
 \arguments{
   \item{full.DAG}{a binary matrix describing the DAG; usually from the DAG function}
   \item{latents}{a vector containing the names of the variables in the full.DAG that are latent (unobserved).  These names must agree with thos in full.DAG}
@@ -18,21 +17,9 @@ Observed.Equivalent.DAG(full.DAG, latents = NA)
 \details{
 The input DAG is a binary matrix that is usually created via the DAG function in the ggm library.  
 }
-\value{
-
-}
-\references{
-
-}
 \author{
   Bill Shipley
 }
-\note{
-
-}
-
-
-
 \seealso{
 \code{\link{DAG}}
 }
@@ -61,6 +48,3 @@ x3 -> x5
 x4 -> x5 
 
 }
-
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }

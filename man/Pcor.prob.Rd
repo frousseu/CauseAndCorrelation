@@ -1,6 +1,5 @@
 \name{Pcor.prob}
 \alias{Pcor.prob}
-
 \title{
 A function to calculate the null probability of a Pearson's partial correlation coefficient.
 }
@@ -11,7 +10,6 @@ Thus function, as written, is meant to be called by other functions.
 \usage{
 Pcor.prob(dat, x, y, Q)
 }
-
 \arguments{
   \item{dat}{a matrix or data frame containing the multivariate observations}
   \item{x}{column number of the first variable in the pair}
@@ -24,27 +22,12 @@ This function calculates the partial correlation by inverting the covariance mat
 \value{
 The null probability associated with the Pearson partial correlation
 }
-\references{
-
-}
 \author{
   Bill Shipley
-}
-\note{
-
-}
-
-
-
-\seealso{
-
 }
 \examples{
 # Partial correlation between variables in columns 1 and 3, conditional on
 # the variables in columns 2 and 5.
 Pcor.prob(dat=Fig3.1.data,x=1,y=3,Q=c(2,5))
-[1] 0.194669
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }

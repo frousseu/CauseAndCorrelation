@@ -1,6 +1,5 @@
 \name{vanishing.tetrads}
 \alias{vanishing.tetrads}
-
 \title{
 Vanishing Tetrads Algorithm
 }
@@ -10,7 +9,6 @@ For each unique set of four variables in the input data, this function tests if 
 \usage{
 vanishing.tetrads(dat, sig = 0.05)
 }
-
 \arguments{
   \item{dat}{a matrix or data frame containing only numeric values}
   \item{sig}{the asymptotic significance level for testing the equality of the tetrad components}
@@ -29,27 +27,14 @@ Shipley, B. 2016. Cause and correlation in biology: A user's guide to path analy
 \author{
   Bill Shipley
 }
-\note{
-
-}
-
-
-
-\seealso{
-
-}
 \examples{
-vanishing.tetrads(Fig3.1.data[,c(1,3,4,5)])
-triplet: 1 2 3 4 1 4 2 3   vanishes (p= 0.2578096 ) 
-If there is a saturated dependency graph for the four variables (via EPA): 1 2 3 4 
-then there is at least one latent common cause of either ( 1 , 3 ) and/or of ( 2 , 4 )
-
-triplet: 1 3 2 4 1 4 2 3  does not vanish (p= 0.04307163 ) 
-
-triplet: 1 3 2 4 1 2 3 4   vanishes (p= 0.2446174 ) 
-If there is a saturated dependency graph for the four variables (via EPA): 1 3 2 4 
-then there is at least one latent common cause of either ( 1 , 4 ) and/or of ( 3 , 2 )
+#vanishing.tetrads(Fig3.1.data[,c(1,3,4,5)])
+#triplet: 1 2 3 4 1 4 2 3   vanishes (p= 0.2578096 ) 
+#If there is a saturated dependency graph for the four variables (via EPA): 1 2 3 4 
+#then there is at least one latent common cause of either ( 1 , 3 ) and/or of ( 2 , 4 )
+#triplet: 1 3 2 4 1 4 2 3  does not vanish (p= 0.04307163 ) 
+#triplet: 1 3 2 4 1 2 3 4   vanishes (p= 0.2446174 ) 
+#If there is a saturated dependency graph for the four variables (via EPA): 1 3 2 4 
+#then there is at least one latent common cause of either ( 1 , 4 ) and/or of ( 3 , 2 )
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }

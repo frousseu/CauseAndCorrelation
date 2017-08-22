@@ -1,6 +1,5 @@
 \name{MCX2}
 \alias{MCX2}
-
 \title{
 Monte Carlo Chi-square simulator
 }
@@ -10,7 +9,6 @@ The maximum likelihood chi-square statistic that is commonly calculated in struc
 \usage{
 MCX2(model.df, n.obs, model.chi.square, n.sim = 10000) 
 }
-
 \arguments{
   \item{x}{}
   \item{model.df}{the number of degrees of freedom of your model}
@@ -24,30 +22,10 @@ Typically, you will have fit your structural equations model using lavaan and us
 \value{
 the estimated null probability using the theoretical chi-square distribution (MLprobability) and the Monte Carlo estimate, correcting for the sample size (MCprobability.  Also shown is a plot of the theoretical and empirical distributions.
 }
-\references{
-
-}
 \author{
   Bill Shipley
 }
-\note{
-
-}
-
-
-
-\seealso{
-
-}
 \examples{
-> MCX2(model.df=3,n.obs=20,model.chi.square=5.2,n.sim=10000)
-$MCprobability
-[1] 0.0907
-
-$MLprobability
-[1] 0.1577245
-
+MCX2(model.df=3,n.obs=20,model.chi.square=5.2,n.sim=10000)
 }
 
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }

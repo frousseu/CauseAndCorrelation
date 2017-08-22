@@ -31,12 +31,6 @@ Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analy
 \author{
   Bill Shipley
 }
-\note{
-
-}
-
-
-
 \seealso{
 \code{\link{dsep.test}}, \code{\link{Pcor.prob}}, \code{\link{shipley.test2}}
 }
@@ -48,6 +42,3 @@ B -- D
 C -- E 
 D -- E 
 }
-
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }
