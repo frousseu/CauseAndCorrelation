@@ -1,6 +1,5 @@
 Observed.Equivalent.DAG<-function (full.DAG, latents = NA) 
 {
-library(ggm)
 # needs the ggm library
 # full.DAG is a binary (0/1) matrix produced from DAG() function in ggm
 #
