@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/BillShipley/CauseAndCorrelation.svg?branch=master)](https://travis-ci.org/BillShipley/CauseAndCorrelation)
 
 # CauseAndCorrelation
-Package of functions for the path analysis [summer school course](http://www.billshipley.recherche.usherbrooke.ca/summer%20school%20path%20analysis.htm) by [Bill Shipley](http://www.billshipley.recherche.usherbrooke.ca/)
+Package of functions for the path analysis [summer school course](http://www.billshipley.recherche.usherbrooke.ca/summer%20school%20path%20analysis.htm) by [Bill Shipley](http://www.billshipley.recherche.usherbrooke.ca/) and companion to the book [*Cause and Correlation in Biology: A User's Guide to Path Analysis, Structural Equations and Causal Inference in R, 2nd edition*](http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107442597).
 
 ## Installation
 
