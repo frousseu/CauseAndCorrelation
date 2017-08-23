@@ -24,9 +24,7 @@ The input DAG is a binary matrix that is usually created via the DAG function in
 \code{\link{DAG}}
 }
 \examples{
-
 library(ggm)
 g <- DAG(B ~ A, C ~ B, D ~ B, E ~ C + D)
 Observed.Equivalent.DAG(g, "B")
-
 }

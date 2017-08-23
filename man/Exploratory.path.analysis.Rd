@@ -28,10 +28,8 @@ Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analy
 \code{\link{Causal.Inference}}
 }
 \examples{
-
 set.seed(123)
 dat <- gen.data()
 Exploratory.path.analysis(dat)
-
 }
 

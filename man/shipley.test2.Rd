@@ -35,11 +35,9 @@ Shipley, B. (2000). A new inferential test for path models based on directed acy
 \code{\link{shipley.test}}, \code{\link{Pcor.prob}}
 }
 \examples{
-
 library(ggm)
 set.seed(123)
 dat <- gen.data()
 g <- DAG(B ~ A, C ~ B, D ~ B, E ~ C + D)
 shipley.test2(amat = g, S = cov(dat), n = 100)
-
 }

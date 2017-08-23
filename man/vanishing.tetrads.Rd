@@ -28,10 +28,8 @@ Shipley, B. 2016. Cause and correlation in biology: A user's guide to path analy
   Bill Shipley
 }
 \examples{
-
 set.seed(123)
 dat <- gen.data()
 vanishing.tetrads(dat[,c(1,3,4,5)])
-
 }
 

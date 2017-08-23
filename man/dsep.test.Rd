@@ -33,5 +33,4 @@ g <- DAG(B ~ A, C ~ B, D ~ B, E ~ C + D)
 dsep.test(amat = g, S = cov(dat), n = 100, only.null = TRUE)
 dsep.test(amat = g, S = cov(dat), n=100, only.null = FALSE)
 }
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }
+

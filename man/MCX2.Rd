@@ -25,8 +25,6 @@ the estimated null probability using the theoretical chi-square distribution (ML
   Bill Shipley
 }
 \examples{
-
 MCX2(model.df=3,n.obs=20,model.chi.square=5.2,n.sim=10000)
-
 }
 
