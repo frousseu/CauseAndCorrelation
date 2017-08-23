@@ -25,8 +25,9 @@ A -- B means an indirected edge between variables A and B
 A --> B means an edge from A into B.
 }
 \references{
-Pearl, J. 2009.  Causality. Models, Reasoning , and Inference (2nd edition). Cambridge University Press.
-Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analysis, structural equations and causal inference in R. Cambridge University Press.
+Pearl, J. 2009.  Causality. Models, Reasoning , and Inference (2nd edition). Cambridge University Press. \href{http://www.cambridge.org/catalogue/catalogue.asp?isbn=9780521895606}{ISBN: 9780521895606}
+
+Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analysis, structural equations and causal inference in R. Cambridge University Press. \href{http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107442597}{ISBN: 9781107442597}
 }
 \author{
   Bill Shipley
@@ -35,10 +36,7 @@ Shipley, B. 2016. Cause and Correlation in Biology: A user's guide to path analy
 \code{\link{dsep.test}}, \code{\link{Pcor.prob}}, \code{\link{shipley.test2}}
 }
 \examples{
-#Causal.Inference(dat=Fig3.1.data,alpha.reject=0.05,write=T)
-#A -- B 
-#B -- C 
-#B -- D 
-#C -- E 
-#D -- E 
+set.seed(123)
+dat <- gen.data()
+Causal.Inference(dat = dat, alpha.reject = 0.05, write = TRUE)
 }

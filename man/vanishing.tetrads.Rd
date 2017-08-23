@@ -28,13 +28,10 @@ Shipley, B. 2016. Cause and correlation in biology: A user's guide to path analy
   Bill Shipley
 }
 \examples{
-#vanishing.tetrads(Fig3.1.data[,c(1,3,4,5)])
-#triplet: 1 2 3 4 1 4 2 3   vanishes (p= 0.2578096 ) 
-#If there is a saturated dependency graph for the four variables (via EPA): 1 2 3 4 
-#then there is at least one latent common cause of either ( 1 , 3 ) and/or of ( 2 , 4 )
-#triplet: 1 3 2 4 1 4 2 3  does not vanish (p= 0.04307163 ) 
-#triplet: 1 3 2 4 1 2 3 4   vanishes (p= 0.2446174 ) 
-#If there is a saturated dependency graph for the four variables (via EPA): 1 3 2 4 
-#then there is at least one latent common cause of either ( 1 , 4 ) and/or of ( 3 , 2 )
+
+set.seed(123)
+dat <- gen.data()
+vanishing.tetrads(dat[,c(1,3,4,5)])
+
 }
 

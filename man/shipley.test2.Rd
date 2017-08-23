@@ -26,7 +26,7 @@ This is simply the shipley.test function in the ggm library, updated to also out
 #pvalue	The P-value of the test, assuming a two-sided alternative.
 }
 \references{
-Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218.
+Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218. \href{http://dx.doi.org/10.1207/S15328007SEM0702_4}{DOI: 10.1207/S15328007SEM0702_4}
 }
 \author{
   Bill Shipley
@@ -35,6 +35,11 @@ Shipley, B. (2000). A new inferential test for path models based on directed acy
 \code{\link{shipley.test}}, \code{\link{Pcor.prob}}
 }
 \examples{
-#Fig3.1.DAG<-DAG(B~A,C~B,D~B,E~C+D)
-#shipley.test2(amat=test,S=cov(Fig3.1.data),n=100)
+
+library(ggm)
+set.seed(123)
+dat <- gen.data()
+g <- DAG(B ~ A, C ~ B, D ~ B, E ~ C + D)
+shipley.test2(amat = g, S = cov(dat), n = 100)
+
 }

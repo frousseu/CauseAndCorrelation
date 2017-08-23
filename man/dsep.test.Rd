@@ -20,20 +20,18 @@ dsep.test(amat, S, n, only.null = F)
 the null probability
 }
 \references{
-Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218. \href{http://dx.doi.org/10.1207/S15328007SEM0702_4}{10.1207/S15328007SEM0702_4}
+Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218. \href{http://dx.doi.org/10.1207/S15328007SEM0702_4}{DOI: 10.1207/S15328007SEM0702_4}
 }
 \author{
-  Bill Shipley
+ Bill Shipley
 }
 \examples{
-#dsep.test(amat=test,S=cov(Fig3.1.data),n=100,only.null=T)
-#dsep.test(amat=test,S=cov(Fig3.1.data),n=100,only.null=F)
-#Individual d-sep claims in basis set 
-#A _||_ D |{ B } r= 0.051  p= 0.618 
-#A _||_ C |{ B } r= -0.118  p= 0.245 
-#A _||_ E |{ D C } r= 0.066  p= 0.521 
-#B _||_ E |{ A D C } r= 0.019  p= 0.855 
-#D _||_ C |{ B } r= -0.015  p= 0.88 
+library(ggm)
+set.seed(123)
+dat <- gen.data()
+g <- DAG(B ~ A, C ~ B, D ~ B, E ~ C + D)
+dsep.test(amat = g, S = cov(dat), n = 100, only.null = TRUE)
+dsep.test(amat = g, S = cov(dat), n=100, only.null = FALSE)
 }
 \keyword{ ~kwd1 }
 \keyword{ ~kwd2 }
