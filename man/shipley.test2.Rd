@@ -20,10 +20,13 @@ The test statistic is C = -2 ∑ ln p_j where p_j are the p-values of tests of c
 This is simply the shipley.test function in the ggm library, updated to also output the union basis set of the DAG and the associated null probabilities.  The statistical tests are based on Pearson (partial) correlations, and so assume multivariate normality and linearity of responses.  By converting the observations to ranks and inputting the covariance matrix of these ranks, you convert the inferential tests to ones based on Spearman (partial) correlations.
 }
 \value{
-#Each d-separation claim: X_||_Y|[{Q}, the associated correlation coefficient, and the null probability
-#ctest	Test statistic C.
-#df	Degrees of freedom.
-#pvalue	The P-value of the test, assuming a two-sided alternative.
+Each d-separation claim: X_||_Y|[{Q}, the associated correlation coefficient, and the null probability.
+
+ctest:	Test statistic C
+
+df:	Degrees of freedom
+
+pvalue:	The P-value of the test, assuming a two-sided alternative
 }
 \references{
 Shipley, B. (2000). A new inferential test for path models based on directed acyclic graphs. Structural Equation Modeling, 7(2), 206–218. \href{http://dx.doi.org/10.1207/S15328007SEM0702_4}{DOI: 10.1207/S15328007SEM0702_4}
